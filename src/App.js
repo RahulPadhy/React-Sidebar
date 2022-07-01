@@ -1,4 +1,5 @@
 import React from "react";
+import './style/App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import ProductList from "./pages/ProductList";
@@ -14,7 +15,7 @@ export default function App() {
       <Sidebar>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
           <Route path="/about" element={<About />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/comment" element={<Comment />} />
